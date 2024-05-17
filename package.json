@@ -1,0 +1,42 @@
+{
+  "name": "email-svc",
+  "version": "1.0.0",
+  "description": "Welcome to the GitHub repository for **Finance Tracker Email SVC** - This service is responsible for managing all the email related operations. It provides functionality for sending verification mail, password reset request mails, and other mails as per the requirements.\r ## Project Status: Under Development\r ### What's Happening Now:\r - The service is currently being developed to create the functionalities to send the mails to the users based on various requirements.\r ---\r **Finance Tracker** - Simplifying Financial Management for Everyone!",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js",
+    "start-appmap": "npx appmap-node nodemon src/index.js",
+    "start": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayushya100/email-svc.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "email-svc"
+  ],
+  "author": "Ayushya Jaiswal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ayushya100/email-svc/issues"
+  },
+  "homepage": "https://github.com/Ayushya100/email-svc#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.13",
+    "nodemailer-express-handlebars": "^6.1.2",
+    "path": "^0.12.7"
+  }
+}
