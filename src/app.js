@@ -6,8 +6,6 @@ import { errorHandler } from 'lib-finance-service';
 
 import { EMAIL_API } from './constants.js';
 
-// Email Routes
-
 const app = express();
 
 // Setting up Middlewares
@@ -26,6 +24,9 @@ app.use(express.urlencoded({
 }));
 
 // Email Route
+import routes from './routes/index.js';
+
+app.post(`${EMAIL_API}/send-mail`, routes.sendMail);
 
 // Error Handler Middleware
 app.use(errorHandler);
